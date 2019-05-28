@@ -34,8 +34,8 @@ export default class Photo extends Component {
             </button>
             <Link className="button" to={`/view/${post.code}`}>
               <span className="comment-count">
-                <span className="speech-bubble" />
-                {comments[post.code] ? comments[post.code].length : 0}
+                <span className="speech-bubble" /> 
+                {comments[post.code] ? ` ${comments[post.code].length}` : ' 0'}
               </span>
             </Link>
           </div>
